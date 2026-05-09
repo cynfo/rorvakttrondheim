@@ -2,16 +2,23 @@
 
 import { Phone, Droplet, Menu, X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Lukk menyen automatisk hver gang man bytter side
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="bg-white/95 backdrop-blur-lg border-b border-gray-100 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 group" onClick={() => setIsMenuOpen(false)}>
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
             <div className="bg-gradient-to-br from-brand-500 to-brand-700 text-white p-1.5 sm:p-2 rounded-xl shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform">
               <Droplet className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2.5} />
             </div>
@@ -59,9 +66,9 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl z-40">
           <nav className="flex flex-col px-4 pt-2 pb-6 gap-4">
-            <Link href="/tjenester" onClick={() => setIsMenuOpen(false)} className="text-lg font-bold text-brand-950 py-3 border-b border-gray-50">Tjenester</Link>
-            <Link href="/om-oss" onClick={() => setIsMenuOpen(false)} className="text-lg font-bold text-brand-950 py-3 border-b border-gray-50">Om oss</Link>
-            <Link href="/kontakt" onClick={() => setIsMenuOpen(false)} className="text-lg font-bold text-brand-950 py-3 border-b border-gray-50">Kontakt</Link>
+            <Link href="/tjenester" className="text-lg font-bold text-brand-950 py-3 border-b border-gray-50">Tjenester</Link>
+            <Link href="/om-oss" className="text-lg font-bold text-brand-950 py-3 border-b border-gray-50">Om oss</Link>
+            <Link href="/kontakt" className="text-lg font-bold text-brand-950 py-3 border-b border-gray-50">Kontakt</Link>
             
             <div className="mt-4 p-4 bg-brand-50 rounded-xl flex flex-col items-center text-center">
               <p className="text-xs text-brand-600 font-bold uppercase tracking-wider mb-2">Trenger du hjelp nå?</p>
