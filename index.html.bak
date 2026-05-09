@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Akutt Rørlegger Trondheim - Døgnåpen Rørleggervakt 24/7</title>
+    <meta name="description" content="Trenger du rørlegger akutt i Trondheim? Vi rykker ut 24/7 for vannlekkasje, tett avløp og vvs-kriser. Lokal rørleggervakt, rask responstid. Ring 92 82 82 62!">
+    <meta name="keywords" content="rørlegger trondheim, akutt rørlegger trondheim, rørvakt trondheim, døgnvakt rørlegger trondheim, rørleggervakt trondheim, tett avløp trondheim, vannlekkasje trondheim, rørlegger døgnåpen trondheim">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Akutt Rørlegger Trondheim - Døgnåpen Rørleggervakt 24/7">
+    <meta property="og:description" content="Vi rykker ut 24/7 for vannlekkasje, tett avløp og vvs-kriser. Lokal rørleggervakt i Trondheim. Ring 92 82 82 62 nå!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rorvakttrondheim.no/">
+    <meta property="og:image" content="https://rorvakttrondheim.no/assets/hero-bg.png">
+    <meta property="og:locale" content="nb_NO">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Schema.org markup for LocalBusiness / PlumbingService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PlumbingService",
+      "name": "Rørvakt Trondheim",
+      "image": "https://rorvakttrondheim.no/assets/hero-bg.png",
+      "url": "https://rorvakttrondheim.no",
+      "telephone": "+4792828262",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Trondheim",
+        "addressRegion": "Trøndelag",
+        "postalCode": "7011",
+        "addressCountry": "NO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 63.4305,
+        "longitude": 10.3951
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": [
+        "Trondheim",
+        "Byåsen",
+        "Heimdal",
+        "Tiller",
+        "Strindheim",
+        "Ranheim",
+        "Malvik",
+        "Melhus"
+      ]
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Hvor raskt kan en rørlegger i Trondheim komme ved akutt vannlekkasje?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vi har utrykning fra vår base sentralt i Trondheim, og er normalt på plass hos deg innen 30-60 minutter ved en akutt vannlekkasje, avhengig av hvor du befinner deg og trafikkbildet."
+        }
+      },{
+        "@type": "Question",
+        "name": "Har dere en døgnåpen rørleggervakt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, vi har en ekte døgnvakt for rørlegger-tjenester. Vi svarer telefonen 24 timer i døgnet, også på julaften, midt på natten og i helger. Vannlekkasjer tar ikke fri, og det gjør ikke vi heller."
+        }
+      },{
+        "@type": "Question",
+        "name": "Hva koster en akutt utrykning for en rørlegger i Trondheim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prisen for vaktutrykning varierer ut fra tidspunkt (dag, natt, helg, helligdag). Når du ringer vår rørleggervakt opplyser vi alltid tydelig om gjeldende takster for oppmøte og timepris før vi rykker ut."
+        }
+      },{
+        "@type": "Question",
+        "name": "Hvilke områder dekker deres rørservice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vår akutte rørservice dekker hele Trondheim kommune (inkludert Byåsen, Tiller, Heimdal, Ranheim, Strindheim), samt nærliggende områder som Malvik og Melhus."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb', // Royal Blue
+                            700: '#1d4ed8',
+                            800: '#1e40af', // Deep Blue
+                            900: '#1e3a8a', // Very Dark Blue
+                            950: '#172554', // Navy
+                        },
+                        accent: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444', 
+                            600: '#dc2626', /* akutt rød */
+                            700: '#b91c1c', 
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                            950: '#450a0a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scroll behavior for smooth anchor links */
+        html { scroll-behavior: smooth; }
+        
+        /* Prevent horizontal scroll issues on mobile */
+        body { overflow-x: hidden; width: 100%; }
+        
+        /* Pulse animation for CTA */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+        .animate-pulse-ring {
+            animation: pulse-ring 2s infinite;
+        }
+
+        /* Float animation for decorative elements */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* FAQ Toggle Animation */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        .faq-answer.open {
+            max-height: 600px;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-icon.open {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased pb-32 md:pb-0 selection:bg-brand-500 selection:text-white">
+
+    <!-- HEADER -->
+    <header class="bg-white/95 backdrop-blur-lg border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Icon: Droplet in Blue -->
+                    <div class="bg-gradient-to-br from-brand-500 to-brand-700 text-white p-1.5 sm:p-2 rounded-xl shadow-lg shadow-brand-500/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                    </div>
+                    <span class="text-xl sm:text-2xl font-display font-bold tracking-tight text-brand-950">Rørvakt<span class="text-brand-500">Trondheim</span></span>
+                </div>
+                <nav aria-label="Hovedmeny" class="hidden md:flex items-center gap-6">
+                    <div class="text-right">
+                        <p class="text-xs text-gray-500 font-medium uppercase tracking-wider mb-1">Døgnåpen vakttelefon</p>
+                        <a href="tel:+4792828262" aria-label="Ring vår rørleggervakt" class="text-2xl font-display font-extrabold text-brand-950 hover:text-accent-600 transition-colors">92 82 82 62</a>
+                    </div>
+                    <a href="tel:+4792828262" aria-label="Ring oss" class="bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white px-7 py-3.5 rounded-xl font-bold flex items-center gap-2 transition-all hover:scale-105 shadow-xl shadow-accent-600/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Ring Oss
+                    </a>
+                </nav>
+                <!-- Mobile Only Phone Icon -->
+                <a href="tel:+4792828262" aria-label="Ring oss akutt" class="md:hidden bg-gradient-to-r from-accent-500 to-accent-600 text-white p-2 rounded-lg shadow-md shadow-accent-600/30 animate-pulse-ring">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO (MODERN WITH IMAGE) -->
+        <section class="relative bg-brand-950 text-white pt-10 pb-16 sm:pt-32 sm:pb-36 overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="assets/hero-bg.png" alt="Rørlegger rykker ut akutt i Trondheim" class="w-full h-full object-cover opacity-30 sm:opacity-40 mix-blend-luminosity filter blur-[2px] scale-105 object-center" fetchpriority="high">
+                <!-- Gradients for readability -->
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 sm:via-brand-950/80 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-950 via-brand-950/50 to-brand-950/30"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    <div class="lg:col-span-7">
+                        <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-accent-600/20 text-accent-400 font-bold text-xs sm:text-sm mb-6 sm:mb-8 border border-accent-600/30 backdrop-blur-md mx-auto lg:mx-0">
+                            <span class="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-accent-500"></span>
+                            </span>
+                            PÅ VAKT I TRONDHEIM NÅ
+                        </div>
+                        <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-tight text-white drop-shadow-md">
+                            Akutt rørleggervakt <br class="hidden sm:block lg:block"> i Trondheim.
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-600 block mt-1 sm:mt-2 text-3xl sm:text-4xl lg:text-5xl">Vannlekkasje eller tett avløp? Vi rykker ut 24/7.</span>
+                        </h1>
+                        <p class="text-base sm:text-lg lg:text-xl text-brand-100 mb-8 sm:mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                            Ikke vent til skaden blir verre. Vår lokale rørlegger rykker ut umiddelbart over hele Trondheim og omegn – enten du har lekkasje, tett rør eller problemer med varmtvannsberederen.
+                        </p>
+                        
+                        <div class="flex flex-col gap-4 mb-8 sm:mb-10 max-w-sm mx-auto lg:mx-0">
+                            <a href="tel:+4792828262" aria-label="Ring 92 82 82 62 for rørleggervakt" class="w-full bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white px-6 sm:px-8 py-4 sm:py-5 rounded-2xl font-extrabold text-xl sm:text-2xl flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-xl shadow-accent-600/40 animate-pulse-ring">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                Ring 92 82 82 62
+                            </a>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 text-sm font-medium text-brand-200 justify-center lg:justify-start">
+                            <div class="flex items-center justify-center gap-2">
+                                <div class="bg-brand-500/20 p-1 sm:p-1.5 rounded-full">
+                                    <svg class="text-brand-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                Rask utrykning
+                            </div>
+                            <div class="hidden sm:block w-1.5 h-1.5 bg-brand-700 rounded-full"></div>
+                            <div class="flex items-center justify-center gap-2">
+                                <div class="bg-brand-500/20 p-1 sm:p-1.5 rounded-full">
+                                    <svg class="text-brand-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                Lokal rørlegger
+                            </div>
+                            <div class="hidden sm:block w-1.5 h-1.5 bg-brand-700 rounded-full"></div>
+                            <div class="flex items-center justify-center gap-2 mt-2 sm:mt-0">
+                                <div class="bg-brand-500/20 p-1 sm:p-1.5 rounded-full">
+                                    <svg class="text-brand-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                Døgnåpen vakt
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden lg:block lg:col-span-5 relative">
+                        <!-- Glassmorphism Trust Box -->
+                        <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl relative z-10 text-left animate-float">
+                            <div class="absolute -top-4 -right-4 bg-accent-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transform rotate-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg>
+                            </div>
+                            <h2 class="font-display text-2xl font-bold mb-6 text-white pb-4 border-b border-white/10">Klar til utrykning i Trondheim:</h2>
+                            <ul class="space-y-6">
+                                <li class="flex items-start gap-4">
+                                    <div class="bg-white/10 p-3 rounded-2xl text-accent-400 shrink-0 border border-white/5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white text-lg">På plass innen 60 min</h3>
+                                        <p class="text-brand-100 text-sm mt-1">Vi rykker ut fra vår base sentralt for å redde boligen din fra vannskader.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="bg-white/10 p-3 rounded-2xl text-accent-400 shrink-0 border border-white/5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white text-lg">Fastpris-garanti mulig</h3>
+                                        <p class="text-brand-100 text-sm mt-1">Vi er åpne om pris og takster, så du slipper overraskelser på regningen.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="absolute inset-0 bg-brand-500/20 blur-3xl rounded-full z-0 pointer-events-none scale-150"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST BAR (MODERN) -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-10 mb-10 sm:mb-0">
+            <div class="bg-white rounded-2xl shadow-xl shadow-brand-900/5 border border-gray-100 p-4 sm:p-6 md:p-8">
+                <!-- Switched to grid-cols-1 on very small screens, sm:grid-cols-2, lg:grid-cols-4 for true mobile optimization -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center sm:text-left divide-y sm:divide-y-0 lg:divide-x divide-gray-100">
+                    <div class="flex items-center gap-4 px-2 sm:px-4 lg:px-6 pt-4 sm:pt-0 first:pt-0 first:border-0 border-t sm:border-0 border-gray-100">
+                        <div class="bg-brand-50 p-2.5 sm:p-3 rounded-2xl text-brand-600 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-gray-900 font-display text-sm sm:text-base">Døgnvakt Rørlegger</p>
+                            <p class="text-xs text-gray-500">Svarer hele døgnet 24/7</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 px-2 sm:px-4 lg:px-6 pt-4 sm:pt-0 border-t sm:border-0 border-gray-100">
+                        <div class="bg-brand-50 p-2.5 sm:p-3 rounded-2xl text-brand-600 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-gray-900 font-display text-sm sm:text-base">Rask utrykning</p>
+                            <p class="text-xs text-gray-500">Prioriterer akutte kriser</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 px-2 sm:px-4 lg:px-6 pt-4 lg:pt-0 border-t lg:border-0 border-gray-100">
+                        <div class="bg-brand-50 p-2.5 sm:p-3 rounded-2xl text-brand-600 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-gray-900 font-display text-sm sm:text-base">Lokalkjent i Trondheim</p>
+                            <p class="text-xs text-gray-500">Kjenner alle bydeler</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 px-2 sm:px-4 lg:px-6 pt-4 lg:pt-0 border-t lg:border-0 border-gray-100">
+                        <div class="bg-brand-50 p-2.5 sm:p-3 rounded-2xl text-brand-600 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-gray-900 font-display text-sm sm:text-base">Trygg Rørservice</p>
+                            <p class="text-xs text-gray-500">Autorisert Rørlegger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AKUTTE TJENESTER (MODERN CARDS) -->
+        <section class="py-16 sm:py-32 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-20">
+                    <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-brand-950 mb-4 sm:mb-6 leading-tight">Rørservice i Trondheim: <br><span class="text-brand-600">Hva trenger du hjelp til nå?</span></h2>
+                    <p class="text-base sm:text-lg text-gray-600 font-light">Klikk på problemet ditt for å ringe vår vakttelefon direkte. Vi har alltid bilene pakket og klare for utrykning.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <!-- Service Card 1 -->
+                    <a href="tel:+4792828262" aria-label="Ring for hjelp ved vannlekkasje" class="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-blue-50 rounded-full group-hover:scale-150 transition-transform duration-500 ease-out z-0"></div>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 sm:mb-8 relative z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                        </div>
+                        <h3 class="font-display text-xl sm:text-2xl font-bold text-gray-900 mb-3 relative z-10">Akutt Vannlekkasje</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed relative z-10">Steng hovedkranen hvis du kan, og ring oss umiddelbart for å unngå store vannskader i boligen din.</p>
+                        <div class="mt-auto flex items-center gap-2 text-brand-600 font-bold group-hover:text-accent-600 transition-colors relative z-10">
+                            Ring for hjelp
+                            <div class="bg-brand-50 group-hover:bg-accent-50 p-2 rounded-full transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Service Card 2 -->
+                    <a href="tel:+4792828262" aria-label="Ring for hjelp ved tett avløp" class="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-gray-50 rounded-full group-hover:scale-150 transition-transform duration-500 ease-out z-0"></div>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 text-gray-700 rounded-2xl flex items-center justify-center mb-6 sm:mb-8 relative z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3 class="font-display text-xl sm:text-2xl font-bold text-gray-900 mb-3 relative z-10">Tett Avløp / Toalett</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed relative z-10">Har du fått stopp i toalett, vask eller sluk? Vi har spesialutstyret som kreves for å åpne opp raskt og skånsomt.</p>
+                        <div class="mt-auto flex items-center gap-2 text-brand-600 font-bold group-hover:text-accent-600 transition-colors relative z-10">
+                            Ring for hjelp
+                            <div class="bg-brand-50 group-hover:bg-accent-50 p-2 rounded-full transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Service Card 3 -->
+                    <a href="tel:+4792828262" aria-label="Ring for problemer med varmtvannsbereder" class="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-orange-50 rounded-full group-hover:scale-150 transition-transform duration-500 ease-out z-0"></div>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 sm:mb-8 relative z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2v6h6M22 13v-3.8c0-1.2 0-1.8-.2-2.3a2.3 2.3 0 0 0-1-1c-.5-.2-1.1-.2-2.3-.2H7.5c-1.2 0-1.8 0-2.3.2a2.3 2.3 0 0 0-1 1c-.2.5-.2 1.1-.2 2.3V20c0 1.2 0 1.8.2 2.3a2.3 2.3 0 0 0 1 1c.5.2 1.1.2 2.3.2H12"/><path d="M12 18v-6"/><path d="M9 15h6"/><path d="M19 16v6"/><path d="M16 19h6"/></svg>
+                        </div>
+                        <h3 class="font-display text-xl sm:text-2xl font-bold text-gray-900 mb-3 relative z-10">Varmtvannsbereder</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed relative z-10">Ingen varmtvann eller drypper det fra berederen? Vi rykker ut for å feilsøke, reparere eller bytte berederen din.</p>
+                        <div class="mt-auto flex items-center gap-2 text-brand-600 font-bold group-hover:text-accent-600 transition-colors relative z-10">
+                            Ring for hjelp
+                            <div class="bg-brand-50 group-hover:bg-accent-50 p-2 rounded-full transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- General CTA Card taking 3 columns on large -->
+                    <a href="tel:+4792828262" aria-label="Ring for andre akutte rørleggerbehov" class="lg:col-span-3 bg-gradient-to-br from-brand-900 to-brand-950 rounded-[2rem] p-6 sm:p-12 shadow-2xl hover:shadow-brand-900/40 hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col md:flex-row items-center justify-between text-center md:text-left border border-brand-800 relative overflow-hidden">
+                        <div class="absolute right-0 top-0 w-64 h-64 bg-brand-600 rounded-full mix-blend-screen filter blur-[80px] opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                        
+                        <div class="relative z-10 mb-6 md:mb-0 md:max-w-xl">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-500/20 text-accent-400 font-bold text-xs mb-4">
+                                <span class="relative flex h-2 w-2">
+                                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-400 opacity-75"></span>
+                                  <span class="relative inline-flex rounded-full h-2 w-2 bg-accent-500"></span>
+                                </span>
+                                ANDRE AKUTTE BEHOV?
+                            </div>
+                            <h3 class="font-display text-2xl sm:text-4xl font-extrabold text-white mb-3 sm:mb-4">Trenger du en rørlegger med noe annet <span class="text-brand-400">NÅ?</span></h3>
+                            <p class="text-brand-200 text-sm sm:text-lg">Hva enn det gjelder, vi kan stille opp med riktig utstyr og solid rørlegger-kompetanse i hele Trondheim.</p>
+                        </div>
+                        <div class="relative z-10 w-full md:w-auto">
+                            <div class="bg-white text-brand-950 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl font-extrabold text-lg sm:text-xl flex items-center justify-center gap-3 group-hover:bg-accent-600 group-hover:text-white transition-all shadow-xl hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                92 82 82 62
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- HVORDAN DET FUNGERER -->
+        <section class="py-16 sm:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+                    <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-brand-950 mb-4 sm:mb-6">Rask hjelp i 3 enkle steg</h2>
+                    <p class="text-base sm:text-lg text-gray-600 font-light">Når krisen er et faktum, trenger du en lokalkjent rørlegger som handler fremfor byråkrati.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 relative">
+                    <!-- Modern Line connecting steps (desktop only) -->
+                    <div class="hidden md:block absolute top-10 lg:top-12 left-[16.66%] right-[16.66%] h-0.5 bg-gradient-to-r from-brand-100 via-brand-500 to-brand-100 z-0"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-white border-4 border-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-display font-black mb-6 sm:mb-8 shadow-xl shadow-brand-900/5 group-hover:scale-110 group-hover:border-brand-500 group-hover:bg-brand-50 transition-all duration-300 transform rotate-3 group-hover:rotate-0">
+                            1
+                        </div>
+                        <h3 class="font-display text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Du ringer vår vakttelefon</h3>
+                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed font-light">Forklar problemet kort. Vi gir deg umiddelbare råd (som å stenge hovedkranen) mens vi setter oss i bilen.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-brand-600 border-4 border-white text-white rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-display font-black mb-6 sm:mb-8 shadow-2xl shadow-brand-600/30 group-hover:scale-110 group-hover:bg-brand-500 transition-all duration-300 transform -rotate-3 group-hover:rotate-0">
+                            2
+                        </div>
+                        <h3 class="font-display text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Vi rykker ut i Trondheim</h3>
+                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed font-light">Vår rørlegger er på vei. Vi har spesialtilpassede biler pakket med nødvendig utstyr for alle akutte rør-hendelser.</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-white border-4 border-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-display font-black mb-6 sm:mb-8 shadow-xl shadow-brand-900/5 group-hover:scale-110 group-hover:border-brand-500 group-hover:bg-brand-50 transition-all duration-300 transform rotate-3 group-hover:rotate-0">
+                            3
+                        </div>
+                        <h3 class="font-display text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Problemet løses trygt</h3>
+                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed font-light">Vi stopper vannlekkasjen, fjerner proppen i avløpet og sikrer at skadeomfanget minimeres med solid fagkunnskap.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HVORFOR VELGE OSS / TRUST (WITH IMAGE) -->
+        <section class="py-16 sm:py-32 bg-brand-50 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center">
+                    
+                    <!-- Image Side -->
+                    <div class="order-2 lg:order-1 relative h-64 sm:h-full sm:min-h-[400px] rounded-3xl overflow-hidden shadow-2xl">
+                        <div class="absolute inset-0 bg-brand-900">
+                             <img src="assets/hero-bg.png" alt="Trygg rørlegger som inspiserer rør" class="w-full h-full object-cover opacity-60 mix-blend-overlay" loading="lazy">
+                        </div>
+                        <!-- Overlay content -->
+                        <div class="absolute inset-0 flex flex-col justify-end p-6 sm:p-12 bg-gradient-to-t from-brand-950 via-brand-900/60 to-transparent text-white">
+                            <div class="flex text-yellow-400 mb-3 sm:mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <p class="text-base sm:text-2xl font-light italic text-brand-100 mb-4 sm:mb-6 leading-relaxed">
+                                "Røret under vasken sprakk kl 03. Rørvakt Trondheim var på Byåsen 25 min senere. Fantastisk lokal service!"
+                            </p>
+                            <div class="flex items-center gap-3 sm:gap-4">
+                                <div class="w-10 h-10 sm:w-14 sm:h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center font-bold text-lg sm:text-xl text-white border border-white/30">
+                                    M
+                                </div>
+                                <div>
+                                    <p class="font-bold text-white text-base sm:text-lg">Martin K.</p>
+                                    <p class="text-xs sm:text-sm text-brand-300">Byåsen, Trondheim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-1 lg:order-2">
+                        <h2 class="font-display text-3xl sm:text-5xl font-extrabold mb-4 sm:mb-8 text-brand-950">Din lokale rørlegger i Trondheim og omegn</h2>
+                        <p class="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 leading-relaxed font-light">Når vannet fosser ut på gulvet midt på natten, trenger du noen som faktisk tar telefonen. Som din lokale rørleggervakt dekker vi hele Trondheim – fra Byåsen og Heimdal til Tiller, Strindheim og Ranheim. Vi er bygget på tilgjengelighet, kompetanse og ekstrem punktlighet.</p>
+                        
+                        <ul class="space-y-4 sm:space-y-6">
+                            <li class="flex items-start gap-4 sm:gap-5 bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100">
+                                <div class="bg-brand-100 text-brand-600 rounded-xl p-2.5 sm:p-3 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-display font-bold text-lg sm:text-xl text-brand-950">Døgnåpen vakttelefon</h3>
+                                    <p class="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 leading-relaxed font-light">Vår rørlegger-vakttelefon er bemannet 24 timer i døgnet, 365 dager i året. Du snakker direkte med fagfolk, ikke en telefonsvarer.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 sm:gap-5 bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100">
+                                <div class="bg-brand-100 text-brand-600 rounded-xl p-2.5 sm:p-3 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-display font-bold text-lg sm:text-xl text-brand-950">Ingen skjulte kostnader</h3>
+                                    <p class="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 leading-relaxed font-light">Vi er åpne om pris. Du får alltid vite gjeldende vakt-tariffer før vi rykker ut, så du vet hva hjelpen koster.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 sm:gap-5 bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100">
+                                <div class="bg-brand-100 text-brand-600 rounded-xl p-2.5 sm:p-3 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-display font-bold text-lg sm:text-xl text-brand-950">Solid fagkompetanse</h3>
+                                    <p class="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 leading-relaxed font-light">Som din lokale rørlegger utbedrer vi feilen etter strenge norske standarder for å sikre hjemmet ditt for fremtiden.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16 sm:py-32 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10 sm:mb-16">
+                    <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-brand-950 mb-4 sm:mb-6">Ofte stilte spørsmål om akutt rørlegger</h2>
+                    <p class="text-base sm:text-lg text-gray-600 font-light">Her er svar på det folk i Trondheim oftest lurer på i en akuttsituasjon.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-brand-50/50 border border-brand-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <button class="faq-button w-full px-5 py-5 sm:px-6 sm:py-6 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" onclick="toggleFaq(this)">
+                            <span class="font-display font-bold text-brand-950 text-lg sm:text-xl pr-4">Hvor raskt kan en rørlegger i Trondheim komme ved akutt vannlekkasje?</span>
+                            <div class="bg-white p-1.5 sm:p-2 rounded-full shadow-sm border border-brand-100 faq-icon shrink-0">
+                                <svg class="text-brand-600 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer bg-white/50 px-5 sm:px-6 text-gray-600 font-light leading-relaxed text-base sm:text-lg border-t border-brand-100">
+                            Vi har utrykning fra vår base sentralt i Trondheim, og er normalt på plass hos deg innen 30-60 minutter ved en akutt vannlekkasje, avhengig av hvor du befinner deg og trafikkbildet.
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="bg-brand-50/50 border border-brand-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <button class="faq-button w-full px-5 py-5 sm:px-6 sm:py-6 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" onclick="toggleFaq(this)">
+                            <span class="font-display font-bold text-brand-950 text-lg sm:text-xl pr-4">Har dere en døgnåpen rørleggervakt?</span>
+                            <div class="bg-white p-1.5 sm:p-2 rounded-full shadow-sm border border-brand-100 faq-icon shrink-0">
+                                <svg class="text-brand-600 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer bg-white/50 px-5 sm:px-6 text-gray-600 font-light leading-relaxed text-base sm:text-lg border-t border-brand-100">
+                            Ja, vi har en ekte døgnvakt for rørlegger-tjenester. Vi svarer telefonen 24 timer i døgnet, også på julaften, midt på natten og i helger. Vannlekkasjer tar ikke fri, og det gjør ikke vi heller.
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="bg-brand-50/50 border border-brand-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <button class="faq-button w-full px-5 py-5 sm:px-6 sm:py-6 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" onclick="toggleFaq(this)">
+                            <span class="font-display font-bold text-brand-950 text-lg sm:text-xl pr-4">Hva koster en akutt utrykning for en rørlegger i Trondheim?</span>
+                            <div class="bg-white p-1.5 sm:p-2 rounded-full shadow-sm border border-brand-100 faq-icon shrink-0">
+                                <svg class="text-brand-600 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer bg-white/50 px-5 sm:px-6 text-gray-600 font-light leading-relaxed text-base sm:text-lg border-t border-brand-100">
+                            Prisen for vaktutrykning varierer ut fra tidspunkt (dag, natt, helg, helligdag). Når du ringer vår rørleggervakt opplyser vi alltid tydelig om gjeldende takster for oppmøte og timepris før vi rykker ut.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-brand-50/50 border border-brand-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <button class="faq-button w-full px-5 py-5 sm:px-6 sm:py-6 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" onclick="toggleFaq(this)">
+                            <span class="font-display font-bold text-brand-950 text-lg sm:text-xl pr-4">Hvilke områder dekker deres rørservice?</span>
+                            <div class="bg-white p-1.5 sm:p-2 rounded-full shadow-sm border border-brand-100 faq-icon shrink-0">
+                                <svg class="text-brand-600 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer bg-white/50 px-5 sm:px-6 text-gray-600 font-light leading-relaxed text-base sm:text-lg border-t border-brand-100">
+                            Vår akutte rørservice dekker hele Trondheim kommune (inkludert Byåsen, Tiller, Heimdal, Ranheim, Strindheim), samt nærliggende områder som Malvik og Melhus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="bg-brand-950 py-16 sm:py-32 text-center px-4 relative overflow-hidden border-t-4 border-brand-600">
+            <!-- Modern abstract background -->
+            <div class="absolute inset-0 z-0 hidden sm:block">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-600/20 rounded-full blur-[100px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-accent-600/20 rounded-full blur-[80px]"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto relative z-10 bg-brand-900/50 sm:bg-white/5 backdrop-blur-xl border border-white/5 sm:border-white/10 p-6 sm:p-16 rounded-[2rem] sm:rounded-3xl shadow-none sm:shadow-2xl">
+                <h2 class="font-display text-3xl sm:text-6xl font-extrabold mb-4 sm:mb-8 text-white">Trenger du rørlegger akkurat nå?</h2>
+                <p class="text-base sm:text-xl text-brand-200 mb-8 sm:mb-12 max-w-2xl mx-auto font-light leading-relaxed">Vi står klare til å rykke ut i Trondheim. Ikke la problemet bli verre mens du venter på at morgendagen skal starte.</p>
+                <a href="tel:+4792828262" aria-label="Ring 92828262 for å bestille rørlegger" class="w-full sm:w-auto inline-flex bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white px-6 sm:px-10 py-5 sm:py-6 rounded-2xl font-extrabold text-xl sm:text-3xl items-center justify-center gap-3 sm:gap-4 transition-transform hover:scale-105 shadow-2xl shadow-accent-600/40">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Ring 92 82 82 62
+                </a>
+                <p class="mt-6 sm:mt-8 text-xs sm:text-sm font-medium text-brand-300 uppercase tracking-widest">Åpent 24/7 • Rask utrykning i Trondheim</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-950 text-gray-400 py-12 sm:py-20 border-t border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 sm:gap-12 mb-12 sm:mb-16 text-center md:text-left">
+                <div class="md:col-span-5">
+                    <div class="flex items-center justify-center md:justify-start gap-2 sm:gap-3 text-white mb-4 sm:mb-6">
+                        <div class="bg-brand-600 text-white p-2 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                        </div>
+                        <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Rørvakt<span class="text-brand-500">Trondheim</span></span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-sm mx-auto md:mx-0 font-light text-brand-200">
+                        Din lokale, pålitelige rørleggervakt i Trondheim. Vi rykker ut for akutte vannlekkasjer, frostspreng og tette rør døgnet rundt, alle dager i året.
+                    </p>
+                </div>
+                <nav aria-label="Kontaktinformasjon" class="md:col-span-4">
+                    <h3 class="text-white font-display font-bold mb-4 sm:mb-6 uppercase tracking-wider text-sm">Kontakt Oss</h3>
+                    <ul class="space-y-4 text-sm font-light text-brand-200">
+                        <li class="flex items-center justify-center md:justify-start gap-3 group">
+                            <div class="bg-white/5 p-2 rounded-lg group-hover:bg-brand-600 transition-colors">
+                                <svg class="text-brand-400 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <a href="tel:+4792828262" aria-label="Telefonnummer 92828262" class="hover:text-white transition-colors text-lg font-medium">92 82 82 62</a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-3 group">
+                            <div class="bg-white/5 p-2 rounded-lg group-hover:bg-brand-600 transition-colors">
+                                <svg class="text-brand-400 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <a href="mailto:chris@247rv.no" aria-label="Epostadresse chris@247rv.no" class="hover:text-white transition-colors">chris@247rv.no</a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-3">
+                            <div class="bg-white/5 p-2 rounded-lg">
+                                <svg class="text-brand-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <span>Trondheim & Omegn</span>
+                        </li>
+                    </ul>
+                </nav>
+                <nav aria-label="Tjenester meny" class="md:col-span-3">
+                    <h3 class="text-white font-display font-bold mb-4 sm:mb-6 uppercase tracking-wider text-sm">Akutte Tjenester</h3>
+                    <ul class="space-y-3 text-sm font-light text-brand-200">
+                        <li><a href="#" class="hover:text-brand-400 hover:pl-2 transition-all flex items-center justify-center md:justify-start gap-2"><div class="w-1 h-1 bg-brand-600 rounded-full"></div> Vannlekkasje</a></li>
+                        <li><a href="#" class="hover:text-brand-400 hover:pl-2 transition-all flex items-center justify-center md:justify-start gap-2"><div class="w-1 h-1 bg-brand-600 rounded-full"></div> Tett avløp & toalett</a></li>
+                        <li><a href="#" class="hover:text-brand-400 hover:pl-2 transition-all flex items-center justify-center md:justify-start gap-2"><div class="w-1 h-1 bg-brand-600 rounded-full"></div> Sprukne rør (Frost)</a></li>
+                        <li><a href="#" class="hover:text-brand-400 hover:pl-2 transition-all flex items-center justify-center md:justify-start gap-2"><div class="w-1 h-1 bg-brand-600 rounded-full"></div> Varmtvannsbereder</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-sm text-center flex flex-col items-center gap-2 font-light text-brand-400">
+                <p>&copy; 2026 Rørvakt Trondheim. Med enerett. Rørleggervakt optimalisert for organisk søk og rask utrykning.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="fixed bottom-0 left-0 right-0 p-3 sm:p-4 bg-white/90 backdrop-blur-xl border-t border-gray-200 shadow-[0_-10px_40px_rgba(0,0,0,0.15)] z-[60] md:hidden flex justify-center pb-6 sm:pb-8 pt-3 sm:pt-4">
+        <a href="tel:+4792828262" aria-label="Ring vår rørleggervakt nå" class="w-full max-w-sm bg-gradient-to-r from-accent-500 to-accent-600 text-white px-4 sm:px-6 py-3.5 sm:py-4 rounded-xl font-extrabold text-lg sm:text-xl flex items-center justify-center gap-2 shadow-xl shadow-accent-600/30 animate-pulse-ring active:scale-95 transition-transform border border-accent-400/30">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            RING NÅ - 92 82 82 62
+        </a>
+    </div>
+
+    <!-- SCRIPT FOR FAQ -->
+    <script>
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            
+            // Toggle open class
+            const isOpen = answer.classList.contains('open');
+            
+            // Update aria-expanded
+            button.setAttribute('aria-expanded', !isOpen);
+            
+            // Close all
+            const allAnswers = document.querySelectorAll('.faq-answer');
+            const allIcons = document.querySelectorAll('.faq-icon');
+            const allButtons = document.querySelectorAll('.faq-button');
+            
+            allAnswers.forEach((otherAnswer, index) => {
+                otherAnswer.classList.remove('open');
+                allIcons[index].classList.remove('open');
+                allButtons[index].setAttribute('aria-expanded', 'false');
+            });
+            
+            // Open clicked if it wasn't open
+            if (!isOpen) {
+                answer.classList.add('open');
+                icon.classList.add('open');
+                button.setAttribute('aria-expanded', 'true');
+            }
+        }
+    </script>
+</body>
+</html>
