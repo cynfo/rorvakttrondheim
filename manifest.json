@@ -1,0 +1,16 @@
+{
+  "name": "Rørvakt Trondheim",
+  "short_name": "Rørvakt",
+  "description": "Døgnåpen akutt rørleggervakt i Trondheim. Vi rykker ut umiddelbart ved vannlekkasjer og tette avløp.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#172554",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
