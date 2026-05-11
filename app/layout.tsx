@@ -50,20 +50,17 @@ export default function RootLayout({
   return (
     <html lang="no" className="scroll-smooth">
       <head>
-        {/* Placeholder for Analytics & Tracking */}
-        {/* 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18148191016"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
+              gtag('config', 'AW-18148191016');
             `,
           }}
-        /> 
-        */}
+        />
       </head>
       <body
         className={`${inter.variable} ${outfit.variable} antialiased bg-gray-50 text-gray-900 font-sans pb-28 md:pb-0 selection:bg-brand-500 selection:text-white flex flex-col min-h-screen`}
