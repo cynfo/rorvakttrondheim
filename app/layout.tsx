@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="no" className="scroll-smooth">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18148223109"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18148191016"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -58,7 +58,6 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-18148191016');
-              gtag('config', 'AW-18148223109');
               gtag('event', 'conversion', {
                   'send_to': 'AW-18148191016/5R-0CNLa16kcEKjW3c1D',
                   'value': 1.0,
