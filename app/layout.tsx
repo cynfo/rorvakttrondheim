@@ -50,6 +50,17 @@ export default function RootLayout({
   return (
     <html lang="no" className="scroll-smooth">
       <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NS9BPWP6');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18148191016"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -70,6 +81,16 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${outfit.variable} antialiased bg-gray-50 text-gray-900 font-sans pb-28 md:pb-0 selection:bg-brand-500 selection:text-white flex flex-col min-h-screen`}
       >
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NS9BPWP6"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Navbar />
         <main className="flex-grow">
           {children}
