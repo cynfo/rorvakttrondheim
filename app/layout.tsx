@@ -61,19 +61,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
         {/* End Google Tag Manager */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18148191016"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18571193822"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-18148191016');
-              gtag('event', 'conversion', {
-                  'send_to': 'AW-18148191016/5R-0CNLa16kcEKjW3c1D',
-                  'value': 1.0,
-                  'currency': 'NOK'
-              });
+              gtag('config', 'AW-18571193822');
+              document.addEventListener('click', function (e) {
+                var link = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+                if (link) {
+                  gtag('event', 'conversion', { 'send_to': 'AW-18571193822/TGbKCK_evbgdEN7bt5dF' });
+                }
+              }, true);
             `,
           }}
         />
