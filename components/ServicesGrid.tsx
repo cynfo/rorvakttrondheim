@@ -16,7 +16,7 @@ export default function ServicesGrid() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Service Card 1 */}
-          <Link href="tel:+4792828262" aria-label="Ring for hjelp ved vannlekkasje" className="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
+          <Link href="tel:+4792828262" className="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
             <div className="absolute -right-8 -top-8 w-32 h-32 bg-blue-50 rounded-full group-hover:scale-150 transition-transform duration-500 ease-out z-0"></div>
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 sm:mb-8 relative z-10">
               <Droplet className="w-7 h-7 sm:w-8 sm:h-8" />
@@ -34,7 +34,7 @@ export default function ServicesGrid() {
           </Link>
           
           {/* Service Card 2 */}
-          <Link href="tel:+4792828262" aria-label="Ring for hjelp ved tett avløp" className="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
+          <Link href="tel:+4792828262" className="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
             <div className="absolute -right-8 -top-8 w-32 h-32 bg-gray-50 rounded-full group-hover:scale-150 transition-transform duration-500 ease-out z-0"></div>
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 text-gray-700 rounded-2xl flex items-center justify-center mb-6 sm:mb-8 relative z-10">
               <Waves className="w-7 h-7 sm:w-8 sm:h-8" />
@@ -52,7 +52,7 @@ export default function ServicesGrid() {
           </Link>
 
           {/* Service Card 3 */}
-          <Link href="tel:+4792828262" aria-label="Ring for problemer med varmtvannsbereder" className="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
+          <Link href="tel:+4792828262" className="bg-white rounded-[2rem] p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col items-start relative overflow-hidden">
             <div className="absolute -right-8 -top-8 w-32 h-32 bg-orange-50 rounded-full group-hover:scale-150 transition-transform duration-500 ease-out z-0"></div>
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 sm:mb-8 relative z-10">
               <Thermometer className="w-7 h-7 sm:w-8 sm:h-8" />
@@ -70,7 +70,7 @@ export default function ServicesGrid() {
           </Link>
 
           {/* General CTA Card taking 3 columns on large */}
-          <Link href="tel:+4792828262" aria-label="Ring for andre akutte rørleggerbehov" className="lg:col-span-3 bg-gradient-to-br from-brand-900 to-brand-950 rounded-[2rem] p-6 sm:p-12 shadow-2xl hover:shadow-brand-900/40 hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col md:flex-row items-center justify-between text-center md:text-left border border-brand-800 relative overflow-hidden">
+          <Link href="tel:+4792828262" className="lg:col-span-3 bg-gradient-to-br from-brand-900 to-brand-950 rounded-[2rem] p-6 sm:p-12 shadow-2xl hover:shadow-brand-900/40 hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 group flex flex-col md:flex-row items-center justify-between text-center md:text-left border border-brand-800 relative overflow-hidden">
             <div className="absolute right-0 top-0 w-64 h-64 bg-brand-600 rounded-full mix-blend-screen filter blur-[80px] opacity-40 group-hover:opacity-60 transition-opacity"></div>
             
             <div className="relative z-10 mb-6 md:mb-0 md:max-w-xl">

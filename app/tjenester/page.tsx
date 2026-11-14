@@ -5,6 +5,7 @@ import FinalCTA from "@/components/FinalCTA";
 export const metadata: Metadata = {
   title: 'Våre Tjenester | Rørlegger Trondheim',
   description: 'Oversikt over rørleggertjenester vi utfører i Trondheim. Vi hjelper med alt fra akutt vannlekkasje og tett avløp til reparasjon av varmtvannsbereder.',
+  alternates: { canonical: '/tjenester' },
 };
 
 export default function ServicesPage() {

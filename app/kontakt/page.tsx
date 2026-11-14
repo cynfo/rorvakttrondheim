@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 export const metadata: Metadata = {
   title: 'Kontakt | Døgnåpen Rørleggervakt Trondheim',
   description: 'Kontakt oss for akutt rørleggerhjelp i Trondheim. Vi har døgnåpen vakttelefon 92828262 og rykker ut umiddelbart ved vannlekkasje og tette avløp.',
+  alternates: { canonical: '/kontakt' },
 };
 
 export default function ContactPage() {

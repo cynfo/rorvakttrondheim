@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import ClickTracking from "@/components/ClickTracking";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -16,7 +17,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rorvakttrondheim.no'),
+  metadataBase: new URL('https://www.rorvakttrondheim.no'),
   title: {
     template: '%s | Rørvakt Trondheim',
     default: 'Akutt Rørlegger Trondheim - Døgnåpen Rørleggervakt 24/7',
@@ -26,20 +27,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'nb_NO',
-    url: 'https://rorvakttrondheim.no',
+    url: 'https://www.rorvakttrondheim.no',
     siteName: 'Rørvakt Trondheim',
     images: [
       {
         url: '/hero-bg.png',
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 1024,
         alt: 'Rørvakt Trondheim - Akutt Rørlegger',
       },
     ],
   },
-  alternates: {
-    canonical: 'https://rorvakttrondheim.no',
-  }
 };
 
 export default function RootLayout({
@@ -98,6 +96,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </main>
         <Footer />
         <StickyMobileCTA />
+        <ClickTracking />
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import { plumbingSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: 'Vannlekkasje Trondheim | Akutt Hjelp',
   description: 'Vannlekkasje i Trondheim? Vi rykker ut umiddelbart for å stoppe lekkasjen og forhindre store vannskader. Døgnåpen vakttelefon 92828262.',
+  alternates: { canonical: '/tjenester/vannlekkasje-trondheim' },
 };
 
 export default function VannlekkasjePage() {

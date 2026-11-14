@@ -4,28 +4,28 @@ export default function RecentWork() {
   const projects = [
     {
       id: 1,
-      src: "/project-varmtvannsbereder.png",
+      src: "/project-varmtvannsbereder.webp",
       alt: "Montering av ny varmtvannsbereder i Trondheim",
       title: "Utskifting av Varmtvannsbereder",
       label: "Heimdal"
     },
     {
       id: 2,
-      src: "/project-servant.jpg",
+      src: "/project-servant.webp",
       alt: "Nytt røropplegg og montering av servant",
       title: "Montering av servant",
       label: "Byåsen"
     },
     {
       id: 3,
-      src: "/project-bad.jpg",
+      src: "/project-bad.webp",
       alt: "Komplett bad og røropplegg",
       title: "Røropplegg baderom",
       label: "Trondheim Sentrum"
     },
     {
       id: 4,
-      src: "/project-dusj.jpg",
+      src: "/project-dusj.webp",
       alt: "Dusj og baderomsløsning",
       title: "Ny dusjløsning",
       label: "Strindheim"

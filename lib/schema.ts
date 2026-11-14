@@ -2,15 +2,18 @@ export const plumbingSchema = {
   "@context": "https://schema.org",
   "@type": "PlumbingService",
   "name": "Rørvakt Trondheim",
-  "image": "https://rorvakttrondheim.no/hero-bg.png",
-  "url": "https://rorvakttrondheim.no",
+  "legalName": "CH Rørleggervakten Trondheim AS",
+  "taxID": "937305451",
+  "email": "chris@247rv.no",
+  "image": "https://www.rorvakttrondheim.no/hero-bg.webp",
+  "url": "https://www.rorvakttrondheim.no",
   "telephone": "+4792828262",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Trondheim",
     "addressRegion": "Trøndelag",
-    "postalCode": "7011",
+    "postalCode": "7026",
     "addressCountry": "NO"
   },
   "geo": {

@@ -28,13 +28,13 @@ export default function Footer() {
                 <div className="bg-white/5 p-2 rounded-lg group-hover:bg-brand-600 transition-colors">
                   <Phone className="w-4 h-4 text-brand-400 group-hover:text-white transition-colors" />
                 </div>
-                <a href="tel:+4792828262" aria-label="Telefonnummer 92828262" className="hover:text-white transition-colors text-lg font-medium">92 82 82 62</a>
+                <a href="tel:+4792828262" className="hover:text-white transition-colors text-lg font-medium">92 82 82 62</a>
               </li>
               <li className="flex items-center justify-center md:justify-start gap-3 group">
                 <div className="bg-white/5 p-2 rounded-lg group-hover:bg-brand-600 transition-colors">
                   <Mail className="w-4 h-4 text-brand-400 group-hover:text-white transition-colors" />
                 </div>
-                <a href="mailto:chris@247rv.no" aria-label="Epostadresse chris@247rv.no" className="hover:text-white transition-colors">chris@247rv.no</a>
+                <a href="mailto:chris@247rv.no" className="hover:text-white transition-colors">chris@247rv.no</a>
               </li>
               <li className="flex items-center justify-center md:justify-start gap-3">
                 <div className="bg-white/5 p-2 rounded-lg">
@@ -75,14 +75,14 @@ export default function Footer() {
         
         <div className="pt-8 border-t border-white/10 text-sm text-center flex flex-col items-center justify-center gap-2 sm:gap-4 font-light text-brand-400">
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <p>&copy; {new Date().getFullYear()} Rørvakt Trondheim. Med enerett. Rørleggervakt optimalisert for rask utrykning.</p>
+            <p>&copy; {new Date().getFullYear()} CH Rørleggervakten Trondheim AS · Org.nr. 937 305 451</p>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-brand-700"></div>
             <div className="flex gap-4">
               <Link href="/om-oss" className="hover:text-white transition-colors">Om oss</Link>
               <Link href="/kontakt" className="hover:text-white transition-colors">Kontakt</Link>
             </div>
           </div>
-          <p className="mt-2 sm:mt-0 text-brand-500/80">
+          <p className="mt-2 sm:mt-0 text-brand-300">
             Laget av <a href="https://scalemedia.no" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:text-brand-400 transition-colors">Scale Media AS</a>
           </p>
         </div>

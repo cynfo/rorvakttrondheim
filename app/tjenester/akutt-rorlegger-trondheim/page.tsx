@@ -8,6 +8,7 @@ import { plumbingSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: 'Akutt Rørlegger Trondheim | Rask Utrykning',
   description: 'Trenger du en akutt rørlegger i Trondheim nå? Vi har vaktbiler pakket og klare for å rykke ut til vannlekkasjer, rørbrudd og tette avløp. Ring oss 24/7!',
+  alternates: { canonical: '/tjenester/akutt-rorlegger-trondheim' },
 };
 
 export default function AkuttRorleggerPage() {

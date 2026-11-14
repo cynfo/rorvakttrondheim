@@ -11,7 +11,7 @@ export default function Testimonials() {
           <div className="order-2 lg:order-1 relative h-64 sm:h-full sm:min-h-[400px] rounded-3xl overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-brand-900">
               <Image 
-                src="/hero-bg.png" 
+                src="/hero-bg.webp" 
                 alt="Trygg rørlegger som inspiserer rør" 
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

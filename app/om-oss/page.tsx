@@ -6,6 +6,7 @@ import FinalCTA from "@/components/FinalCTA";
 export const metadata: Metadata = {
   title: 'Om Oss | Lokal Rørlegger i Trondheim',
   description: 'Vi er din lokale rørlegger i Trondheim. Med døgnvakt og rask responstid hjelper vi deg med vannlekkasjer og tette rør, når som helst på døgnet.',
+  alternates: { canonical: '/om-oss' },
 };
 
 export default function AboutPage() {

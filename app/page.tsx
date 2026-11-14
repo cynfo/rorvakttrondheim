@@ -6,7 +6,12 @@ import RecentWork from "@/components/RecentWork";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
+import type { Metadata } from "next";
 import { plumbingSchema, faqSchema } from "@/lib/schema";
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+};
 
 export default function Home() {
   return (

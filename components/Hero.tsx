@@ -13,10 +13,10 @@ export default function Hero({ title, subtitle, description }: HeroProps) {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/hero-bg.png" 
+          src="/hero-bg.webp" 
           alt="Rørlegger rykker ut akutt i Trondheim" 
           fill
-          priority
+          preload
           sizes="100vw"
           className="object-cover opacity-30 sm:opacity-40 mix-blend-luminosity filter blur-[2px] scale-105 object-center"
         />

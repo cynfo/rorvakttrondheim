@@ -7,6 +7,7 @@ import { plumbingSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: 'Tett Avløp Trondheim | Vi åpner rørene',
   description: 'Tett toalett eller sluk i Trondheim? Vår døgnvakt har spesialverktøy for å åpne tette rør, avløp og sluk raskt og effektivt.',
+  alternates: { canonical: '/tjenester/tett-avlop-trondheim' },
 };
 
 export default function TettAvlopPage() {

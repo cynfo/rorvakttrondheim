@@ -8,6 +8,7 @@ import { plumbingSchema, faqSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: 'Døgnvakt Rørlegger Trondheim | Åpent 24/7',
   description: 'Vår døgnvakt for rørlegger i Trondheim svarer 24/7. Uansett tidspunkt rykker vi ut for akutt rørservice, vannlekkasjer og rørbrudd.',
+  alternates: { canonical: '/tjenester/dognvakt-rorlegger-trondheim' },
 };
 
 export default function DognvaktPage() {
